@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Log In | Maunga Club</title>
+    <!-- Font Awwsome -->
+    <script
+      src="https://kit.fontawesome.com/866b8b01f2.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="../css/pages_styles/login.css" />
+
+    <!-- SCRIPTS -->
+    <script defer src="../js/auth/login.js"></script>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header class="Header">
+      <!-- COVID 19 -->
+      <div class="Header__Covid">
+        <a target="_blank" href="https://covid19.govt.nz/international-travel/"
+          >Travelling During COVID-19</a
+        >
+      </div>
+
+      <!-- NAVBAR -->
+      <nav class="Header__Navbar">
+        <div class="Header__Navbar__Left">
+          <img
+            src="../assets/icon.png"
+            alt=""
+            onclick="window.location.pathname='/index.html'"
+          />
+        </div>
+
+        <div class="Header__Navbar__Right">
+          <a href="/index.html#Main__Chalets"
+            ><i class="fa-solid fa-people-roof"></i> Chalets</a
+          >
+          <a href="#"><i class="fa-solid fa-phone"></i> 0800-123-456</a>
+          <a href="./joinUs.html"
+            ><i class="fa-solid fa-circle-chevron-up"></i> Join Us</a
+          >
+          <a href="#"><i class="fa-solid fa-right-to-bracket"></i> Log In</a>
+        </div>
+      </nav>
+    </header>
+
+    <!-- MAIN -->
+    <main class="Main">
+      <!-- CHALLETS -->
+      <div class="Main__Login" onsubmit="return false;">
+        <form id="Main__Login__Form">
+          <h2>Welcome Back</h2>
+          <div class="Main__Login__Form__Input">
+            <label for="">Username</label>
+            <input
+              id="Main__Login__Form__Input__Username"
+              type="text"
+              required
+              placeholder="Username..."
+            />
+          </div>
+          <div class="Main__Login__Form__Input">
+            <label for="">Password</label>
+            <input
+              id="Main__Login__Form__Input__Password"
+              type="text"
+              required
+              placeholder="Passowrd..."
+            />
+          </div>
+
+          <button type="submit">Log in</button>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>
